@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'session_auth.wsgi.application'
+WSGI_APPLICATION = 'myproject.session_auth.wsgi.application'
 
 
 # Database
