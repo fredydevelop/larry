@@ -170,7 +170,7 @@ REST_FRAMEWORK = {
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ACCOUNT_USERNAME_BLACKLIST=["admin,olori_oko","account"]
+ACCOUNT_USERNAME_BLACKLIST=["admin","olori_oko","account"]
 
 # CORS_ALLOW_ALL_ORIGINS = True
 # CORS_ALLOWED_ORIGINS = [
