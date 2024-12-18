@@ -64,7 +64,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware'
 ]
 
-ROOT_URLCONF = 'myproject.session_auth.urls'
+ROOT_URLCONF = 'session_auth.urls'
 
 TEMPLATES = [
     {
@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myproject.session_auth.wsgi.application'
+WSGI_APPLICATION = 'session_auth.wsgi.application'
 
 
 # Database
@@ -106,7 +106,8 @@ DATABASES = {
     }
 }
 
-DATABASES["default"]=dj_database_url.parse(env('DATABASE_URL'))
+if ENVIRONMENT == "production":
+    DATABASES["default"]=dj_database_url.parse(env('DATABASE_URL'))
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
 
