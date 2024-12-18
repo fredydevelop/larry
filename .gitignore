@@ -1,0 +1,5 @@
+thefront/
+.env
+db.sqlite3
+__pycache__
+static/
